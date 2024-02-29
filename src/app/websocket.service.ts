@@ -9,7 +9,7 @@ export class WebsocketService {
   private socket: Socket;
 
   constructor() {
-    this.socket = io('http://localhost:3004');
+    this.socket = io("https://ws-server-357t.onrender.com");
   }
 
   getMessage(): Observable<string> {
